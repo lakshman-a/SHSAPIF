@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href='Stylesheet.xsl' type='text/xsl'?><TestReport>
+<TestSuite Description="CBOS_ITG_API" ExecutionEnded="06/10/2016 06:48:52 PM" ExecutionStarted="06/10/2016 06:47:27 PM" OperatingSystem="Windows 7">CBOS_ITG_API<TestCase Description="GET_SUBSCRIBER_DETAILS_001: validating MSISDN  tag with Valid data" ExecutionEnded="06/10/2016 06:47:48 PM" ExecutionStarted="06/10/2016 06:47:28 PM" Status="1">GET_SUBSCRIBER_DETAILS_001: validating MSISDN  tag with Valid data<AppComponent Description="Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands" ExecutionEnded="06/10/2016 06:47:38 PM" ExecutionStarted="06/10/2016 06:47:28 PM">Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands<Event Status="4">Test Data Objective : Open and Display the Command Prompt Window to execute the commands</Event>
+<Event Status="1">UNIX Server with IP Address '192.168.151.90' has been connected successfully</Event>
+<Event Status="1">Application Component 'Open_Command_Prompt' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type" ExecutionEnded="06/10/2016 06:47:47 PM" ExecutionStarted="06/10/2016 06:47:38 PM">Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type<Event Status="4">Test Data Objective : Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type</Event>
+<Event Status="1">Command Executed for Command_Start: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_001 start  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_47_39 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'Remote script activity for the testcase started...
+
+' matched with with Expected output 'Remote script activity for the testcase started... '</Event>
+<Event Status="1">The xml request : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:head="http://www.plintron.com/header/" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"&gt;&lt;soapenv:Header&gt; &lt;oas:Security&gt;&lt;!--You may enter ANY elements at this point--&gt;&lt;/oas:Security&gt;&lt;head:TRANSACTION_ID&gt;AutomationTran123ss&lt;/head:TRANSACTION_ID&gt;&lt;head:ENTITY&gt;ITGSIM:11:CBOSAUTO&lt;/head:ENTITY&gt;&lt;head:CHANNEL_REFERENCE&gt;CCARE&lt;/head:CHANNEL_REFERENCE&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;DETAILS&gt;
+&lt;MSISDN&gt;19911051000&lt;/MSISDN&gt;&lt;/DETAILS&gt;&lt;/GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;' has been sent successfully.</Event>
+<Event Status="1">The xml response : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+&lt;soapenv:Header&gt;
+&lt;ERROR_CODE&gt;0&lt;/ERROR_CODE&gt;
+&lt;ERROR_DESC&gt;Success&lt;/ERROR_DESC&gt;
+&lt;/soapenv:Header&gt;
+&lt;soapenv:Body&gt;&lt;GET_SUBSCRIBER_DETAILS_RESPONSE&gt;&lt;MSISDN&gt;19911051000&lt;/MSISDN&gt;&lt;ICC_ID&gt;1234567898000510000&lt;/ICC_ID&gt;&lt;IMSI&gt;999999500051000&lt;/IMSI&gt;&lt;PUK_CODE&gt;12329834&lt;/PUK_CODE&gt;&lt;/GET_SUBSCRIBER_DETAILS_RESPONSE&gt;
+&lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;' received successfully.</Event>
+<Event Status="1">'soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Envelope' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">The actual node value of  : '//ERROR_CODE' is '0' and matched with the expected value '0'.</Event>
+<Event Status="1">The actual node value of  : '//ERROR_DESC' is 'Success' and matched with the expected value 'Success'.</Event>
+<Event Status="1">The actual node value of  : '//MSISDN' is '19911051000' and matched with the expected value '19911051000'.</Event>
+<Event Status="1">The actual node value of  : '//ICC_ID' is '1234567898000510000' and matched with the expected value '1234567898000510000'.</Event>
+<Event Status="1">The actual node value of  : '//IMSI' is '999999500051000' and matched with the expected value '999999500051000'.</Event>
+<Event Status="1">The actual node value of  : '//PUK_CODE' is '12329834' and matched with the expected value '12329834'.</Event>
+<Event Status="1">Application Component 'Start_Script_XMLVal_SinglePair' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Stop_Script: Stop the logging process" ExecutionEnded="06/10/2016 06:47:48 PM" ExecutionStarted="06/10/2016 06:47:47 PM">Stop_Script: Stop the logging process<Event Status="4">Test Data Objective : Stop the logging process</Event>
+<Event Status="1">Command Executed for Command_Stop: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_001 stop  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_47_47 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'pass
+' matched with with Expected output 'pass'</Event>
+<Event Status="1">Application Component 'Stop_Script' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR" ExecutionEnded="06/10/2016 06:47:48 PM" ExecutionStarted="06/10/2016 06:47:48 PM">Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR<Event Status="4">Test Data Objective : Validation of Possible outputs of CDR/TDR data by executing command CDR</Event>
+<Event Status="1">Command Executed for CDR: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_001 CDR  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_47_48 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'PASS
+' matched with with Expected output 'PASS'</Event>
+<Event Status="1">Application Component 'Validating_CDR' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Close_Command_Prompt: Closes the Command Prompt Window" ExecutionEnded="06/10/2016 06:47:48 PM" ExecutionStarted="06/10/2016 06:47:48 PM">Close_Command_Prompt: Closes the Command Prompt Window<Event Status="4">Test Data Objective : Closes the Command Prompt Window</Event>
+<Event Status="1">Unix Connection disconnected successfully</Event>
+<Event Status="1">Application Component 'Close_Command_Prompt' execution is  successful</Event>
+<Event Status="4">End of Test Case :  GET_SUBSCRIBER_DETAILS_001</Event>
+</AppComponent>
+</TestCase>
+<TestCase Description="GET_SUBSCRIBER_DETAILS_002: MSISDN tag with Alhanumeric data" ExecutionEnded="06/10/2016 06:47:52 PM" ExecutionStarted="06/10/2016 06:47:48 PM" Status="3">GET_SUBSCRIBER_DETAILS_002: MSISDN tag with Alhanumeric data<AppComponent Description="Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands" ExecutionEnded="06/10/2016 06:47:49 PM" ExecutionStarted="06/10/2016 06:47:48 PM">Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands<Event Status="4">Test Data Objective : Open and Display the Command Prompt Window to execute the commands</Event>
+<Event Status="1">UNIX Server with IP Address '192.168.151.90' has been connected successfully</Event>
+<Event Status="1">Application Component 'Open_Command_Prompt' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type" ExecutionEnded="06/10/2016 06:47:51 PM" ExecutionStarted="06/10/2016 06:47:49 PM">Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type<Event Status="4">Test Data Objective : Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type</Event>
+<Event Status="1">Command Executed for Command_Start: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_002 start  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_47_49 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'Remote script activity for the testcase started...
+
+' matched with with Expected output 'Remote script activity for the testcase started'</Event>
+<Event Status="1">The xml request : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:head="http://www.plintron.com/header/" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"&gt;&lt;soapenv:Header&gt; &lt;oas:Security&gt;&lt;!--You may enter ANY elements at this point--&gt;&lt;/oas:Security&gt;&lt;head:TRANSACTION_ID&gt;AutomationTran123ss&lt;/head:TRANSACTION_ID&gt;&lt;head:ENTITY&gt;ITGSIM:11:CBOSAUTO&lt;/head:ENTITY&gt;&lt;head:CHANNEL_REFERENCE&gt;CCARE&lt;/head:CHANNEL_REFERENCE&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;DETAILS&gt;
+&lt;MSISDN&gt;1ab99110011&lt;/MSISDN&gt;&lt;/DETAILS&gt;&lt;/GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;' has been sent successfully.</Event>
+<Event Status="1">The xml response : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+&lt;soapenv:Header&gt;
+&lt;ERROR_CODE&gt;1&lt;/ERROR_CODE&gt;
+&lt;ERROR_DESC&gt;Invalid Key&lt;/ERROR_DESC&gt;
+&lt;/soapenv:Header&gt;
+&lt;soapenv:Body&gt;
+&lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;' received successfully.</Event>
+<Event Status="1">'soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Envelope' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="3">The actual node value of  : '//ERROR_CODE' is '1' and no matching with the expected value '955'.</Event>
+<Event Status="3">The actual node value of  : '//ERROR_DESC' is 'Invalid Key' and no matching with the expected value 'XML Parsing Failed: test:1:70 error:  value '1ab99110011' does not match regular expression facet '[0-9]{4,20}''.</Event>
+<Event Status="3">Application Component 'Start_Script_XMLVal_SinglePair' execution is not successful</Event>
+</AppComponent>
+<AppComponent Description="Stop_Script: Stop the logging process" ExecutionEnded="06/10/2016 06:47:52 PM" ExecutionStarted="06/10/2016 06:47:51 PM">Stop_Script: Stop the logging process<Event Status="4">Test Data Objective : Stop the logging process</Event>
+<Event Status="1">Command Executed for Command_Stop: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_002 stop  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_47_51 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'pass
+' matched with with Expected output 'pass'</Event>
+<Event Status="1">Application Component 'Stop_Script' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR" ExecutionEnded="06/10/2016 06:47:52 PM" ExecutionStarted="06/10/2016 06:47:52 PM">Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR<Event Status="4">Test Data Objective : Validation of Possible outputs of CDR/TDR data by executing command CDR</Event>
+<Event Status="1">Command Executed for CDR: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_002 CDR  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_47_52 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'PASS
+' matched with with Expected output 'PASS'</Event>
+<Event Status="1">Application Component 'Validating_CDR' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Close_Command_Prompt: Closes the Command Prompt Window" ExecutionEnded="06/10/2016 06:47:52 PM" ExecutionStarted="06/10/2016 06:47:52 PM">Close_Command_Prompt: Closes the Command Prompt Window<Event Status="4">Test Data Objective : Closes the Command Prompt Window</Event>
+<Event Status="1">Unix Connection disconnected successfully</Event>
+<Event Status="1">Application Component 'Close_Command_Prompt' execution is  successful</Event>
+<Event Status="4">End of Test Case :  GET_SUBSCRIBER_DETAILS_002</Event>
+</AppComponent>
+</TestCase>
+<TestCase Description="GET_SUBSCRIBER_DETAILS_003: MSISDN tag with Special Characters" ExecutionEnded="06/10/2016 06:47:56 PM" ExecutionStarted="06/10/2016 06:47:52 PM" Status="3">GET_SUBSCRIBER_DETAILS_003: MSISDN tag with Special Characters<AppComponent Description="Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands" ExecutionEnded="06/10/2016 06:47:53 PM" ExecutionStarted="06/10/2016 06:47:52 PM">Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands<Event Status="4">Test Data Objective : Open and Display the Command Prompt Window to execute the commands</Event>
+<Event Status="1">UNIX Server with IP Address '192.168.151.90' has been connected successfully</Event>
+<Event Status="1">Application Component 'Open_Command_Prompt' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type" ExecutionEnded="06/10/2016 06:47:55 PM" ExecutionStarted="06/10/2016 06:47:53 PM">Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type<Event Status="4">Test Data Objective : Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type</Event>
+<Event Status="1">Command Executed for Command_Start: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_003 start  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_47_53 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'Remote script activity for the testcase started...
+
+' matched with with Expected output 'Remote script activity for the testcase started'</Event>
+<Event Status="1">The xml request : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:head="http://www.plintron.com/header/" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"&gt;&lt;soapenv:Header&gt; &lt;oas:Security&gt;&lt;!--You may enter ANY elements at this point--&gt;&lt;/oas:Security&gt;&lt;head:TRANSACTION_ID&gt;AutomationTran123ss&lt;/head:TRANSACTION_ID&gt;&lt;head:ENTITY&gt;ITGSIM:11:CBOSAUTO&lt;/head:ENTITY&gt;&lt;head:CHANNEL_REFERENCE&gt;CCARE&lt;/head:CHANNEL_REFERENCE&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;DETAILS&gt;
+&lt;MSISDN&gt;19911@#0011&lt;/MSISDN&gt;&lt;/DETAILS&gt;&lt;/GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;' has been sent successfully.</Event>
+<Event Status="1">The xml response : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+&lt;soapenv:Header&gt;
+&lt;ERROR_CODE&gt;1&lt;/ERROR_CODE&gt;
+&lt;ERROR_DESC&gt;Invalid Key&lt;/ERROR_DESC&gt;
+&lt;/soapenv:Header&gt;
+&lt;soapenv:Body&gt;
+&lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;' received successfully.</Event>
+<Event Status="1">'soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Envelope' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="3">The actual node value of  : '//ERROR_CODE' is '1' and no matching with the expected value '955'.</Event>
+<Event Status="3">The actual node value of  : '//ERROR_DESC' is 'Invalid Key' and no matching with the expected value 'XML Parsing Failed: test:1:70 error:  value '19911@#0011' does not match regular expression facet '[0-9]{4,20}''.</Event>
+<Event Status="3">Application Component 'Start_Script_XMLVal_SinglePair' execution is not successful</Event>
+</AppComponent>
+<AppComponent Description="Stop_Script: Stop the logging process" ExecutionEnded="06/10/2016 06:47:55 PM" ExecutionStarted="06/10/2016 06:47:55 PM">Stop_Script: Stop the logging process<Event Status="4">Test Data Objective : Stop the logging process</Event>
+<Event Status="1">Command Executed for Command_Stop: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_003 stop  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_47_55 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'pass
+' matched with with Expected output 'pass'</Event>
+<Event Status="1">Application Component 'Stop_Script' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR" ExecutionEnded="06/10/2016 06:47:56 PM" ExecutionStarted="06/10/2016 06:47:55 PM">Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR<Event Status="4">Test Data Objective : Validation of Possible outputs of CDR/TDR data by executing command CDR</Event>
+<Event Status="1">Command Executed for CDR: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_003 CDR  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_47_55 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'PASS
+' matched with with Expected output 'PASS'</Event>
+<Event Status="1">Application Component 'Validating_CDR' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Close_Command_Prompt: Closes the Command Prompt Window" ExecutionEnded="06/10/2016 06:47:56 PM" ExecutionStarted="06/10/2016 06:47:56 PM">Close_Command_Prompt: Closes the Command Prompt Window<Event Status="4">Test Data Objective : Closes the Command Prompt Window</Event>
+<Event Status="1">Unix Connection disconnected successfully</Event>
+<Event Status="1">Application Component 'Close_Command_Prompt' execution is  successful</Event>
+<Event Status="4">End of Test Case :  GET_SUBSCRIBER_DETAILS_003</Event>
+</AppComponent>
+</TestCase>
+<TestCase Description="GET_SUBSCRIBER_DETAILS_004: MSISDN tag with zero" ExecutionEnded="06/10/2016 06:48:01 PM" ExecutionStarted="06/10/2016 06:47:56 PM" Status="1">GET_SUBSCRIBER_DETAILS_004: MSISDN tag with zero<AppComponent Description="Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands" ExecutionEnded="06/10/2016 06:47:58 PM" ExecutionStarted="06/10/2016 06:47:57 PM">Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands<Event Status="4">Test Data Objective : Open and Display the Command Prompt Window to execute the commands</Event>
+<Event Status="1">UNIX Server with IP Address '192.168.151.90' has been connected successfully</Event>
+<Event Status="1">Application Component 'Open_Command_Prompt' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type" ExecutionEnded="06/10/2016 06:48:00 PM" ExecutionStarted="06/10/2016 06:47:58 PM">Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type<Event Status="4">Test Data Objective : Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type</Event>
+<Event Status="1">Command Executed for Command_Start: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_004 start  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_47_58 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'Remote script activity for the testcase started...
+
+' matched with with Expected output 'Remote script activity for the testcase started'</Event>
+<Event Status="1">The xml request : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:head="http://www.plintron.com/header/" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"&gt;&lt;soapenv:Header&gt; &lt;oas:Security&gt;&lt;!--You may enter ANY elements at this point--&gt;&lt;/oas:Security&gt;&lt;head:TRANSACTION_ID&gt;AutomationTran123ss&lt;/head:TRANSACTION_ID&gt;&lt;head:ENTITY&gt;ITGSIM:11:CBOSAUTO&lt;/head:ENTITY&gt;&lt;head:CHANNEL_REFERENCE&gt;CCARE&lt;/head:CHANNEL_REFERENCE&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;DETAILS&gt;&lt;MSISDN&gt;0&lt;/MSISDN&gt;&lt;/DETAILS&gt;&lt;/GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;' has been sent successfully.</Event>
+<Event Status="1">The xml response : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+&lt;soapenv:Header&gt;
+&lt;ERROR_CODE&gt;955&lt;/ERROR_CODE&gt;
+&lt;ERROR_DESC&gt;XML Parsing Failed: test:1:60 error:  value '0' has length '1' which is less than minLength facet value '4'&lt;/ERROR_DESC&gt;
+&lt;/soapenv:Header&gt;
+&lt;soapenv:Body&gt;
+&lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;' received successfully.</Event>
+<Event Status="1">'soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Envelope' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">The actual node value of  : '//ERROR_CODE' is '955' and matched with the expected value '955'.</Event>
+<Event Status="1">The actual node value of  : '//ERROR_DESC' is 'XML Parsing Failed: test:1:60 error:  value '0' has length '1' which is less than minLength facet value '4'' and matched with the expected value 'XML Parsing Failed: test:1:60 error:  value '0' has length '1' which is less than minLength facet value '4''.</Event>
+<Event Status="1">Application Component 'Start_Script_XMLVal_SinglePair' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Stop_Script: Stop the logging process" ExecutionEnded="06/10/2016 06:48:00 PM" ExecutionStarted="06/10/2016 06:48:00 PM">Stop_Script: Stop the logging process<Event Status="4">Test Data Objective : Stop the logging process</Event>
+<Event Status="1">Command Executed for Command_Stop: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_004 stop  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_00 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'pass
+' matched with with Expected output 'pass'</Event>
+<Event Status="1">Application Component 'Stop_Script' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR" ExecutionEnded="06/10/2016 06:48:01 PM" ExecutionStarted="06/10/2016 06:48:00 PM">Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR<Event Status="4">Test Data Objective : Validation of Possible outputs of CDR/TDR data by executing command CDR</Event>
+<Event Status="1">Command Executed for CDR: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_004 CDR  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_00 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'PASS
+' matched with with Expected output 'PASS'</Event>
+<Event Status="1">Application Component 'Validating_CDR' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Close_Command_Prompt: Closes the Command Prompt Window" ExecutionEnded="06/10/2016 06:48:01 PM" ExecutionStarted="06/10/2016 06:48:01 PM">Close_Command_Prompt: Closes the Command Prompt Window<Event Status="4">Test Data Objective : Closes the Command Prompt Window</Event>
+<Event Status="1">Unix Connection disconnected successfully</Event>
+<Event Status="1">Application Component 'Close_Command_Prompt' execution is  successful</Event>
+<Event Status="4">End of Test Case :  GET_SUBSCRIBER_DETAILS_004</Event>
+</AppComponent>
+</TestCase>
+<TestCase Description="GET_SUBSCRIBER_DETAILS_005: MSISDN tag  with empty" ExecutionEnded="06/10/2016 06:48:04 PM" ExecutionStarted="06/10/2016 06:48:01 PM" Status="1">GET_SUBSCRIBER_DETAILS_005: MSISDN tag  with empty<AppComponent Description="Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands" ExecutionEnded="06/10/2016 06:48:01 PM" ExecutionStarted="06/10/2016 06:48:01 PM">Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands<Event Status="4">Test Data Objective : Open and Display the Command Prompt Window to execute the commands</Event>
+<Event Status="1">UNIX Server with IP Address '192.168.151.90' has been connected successfully</Event>
+<Event Status="1">Application Component 'Open_Command_Prompt' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type" ExecutionEnded="06/10/2016 06:48:03 PM" ExecutionStarted="06/10/2016 06:48:01 PM">Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type<Event Status="4">Test Data Objective : Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type</Event>
+<Event Status="1">Command Executed for Command_Start: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_005 start  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_01 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'Remote script activity for the testcase started...
+
+' matched with with Expected output 'Remote script activity for the testcase started'</Event>
+<Event Status="1">The xml request : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:head="http://www.plintron.com/header/" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"&gt;&lt;soapenv:Header&gt; &lt;oas:Security&gt;&lt;!--You may enter ANY elements at this point--&gt;&lt;/oas:Security&gt;&lt;head:TRANSACTION_ID&gt;AutomationTran123ss&lt;/head:TRANSACTION_ID&gt;&lt;head:ENTITY&gt;ITGSIM:11:CBOSAUTO&lt;/head:ENTITY&gt;&lt;head:CHANNEL_REFERENCE&gt;CCARE&lt;/head:CHANNEL_REFERENCE&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;DETAILS&gt;&lt;MSISDN/&gt;&lt;/DETAILS&gt;&lt;/GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;' has been sent successfully.</Event>
+<Event Status="1">The xml response : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+&lt;soapenv:Header&gt;
+&lt;ERROR_CODE&gt;955&lt;/ERROR_CODE&gt;
+&lt;ERROR_DESC&gt;XML Parsing Failed: test:1:51 error:  value '' has length '0' which is less than minLength facet value '4'&lt;/ERROR_DESC&gt;
+&lt;/soapenv:Header&gt;
+&lt;soapenv:Body&gt;
+&lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;' received successfully.</Event>
+<Event Status="1">'soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Envelope' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">The actual node value of  : '//ERROR_CODE' is '955' and matched with the expected value '955'.</Event>
+<Event Status="1">The actual node value of  : '//ERROR_DESC' is 'XML Parsing Failed: test:1:51 error:  value '' has length '0' which is less than minLength facet value '4'' and matched with the expected value 'XML Parsing Failed: test:1:59 error:  value '' has length '0' which is less than minLength facet value '4''.</Event>
+<Event Status="1">Application Component 'Start_Script_XMLVal_SinglePair' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Stop_Script: Stop the logging process" ExecutionEnded="06/10/2016 06:48:04 PM" ExecutionStarted="06/10/2016 06:48:03 PM">Stop_Script: Stop the logging process<Event Status="4">Test Data Objective : Stop the logging process</Event>
+<Event Status="1">Command Executed for Command_Stop: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_005 stop  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_03 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'pass
+' matched with with Expected output 'pass'</Event>
+<Event Status="1">Application Component 'Stop_Script' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR" ExecutionEnded="06/10/2016 06:48:04 PM" ExecutionStarted="06/10/2016 06:48:04 PM">Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR<Event Status="4">Test Data Objective : Validation of Possible outputs of CDR/TDR data by executing command CDR</Event>
+<Event Status="1">Command Executed for CDR: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_005 CDR  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_04 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'PASS
+' matched with with Expected output 'PASS'</Event>
+<Event Status="1">Application Component 'Validating_CDR' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Close_Command_Prompt: Closes the Command Prompt Window" ExecutionEnded="06/10/2016 06:48:04 PM" ExecutionStarted="06/10/2016 06:48:04 PM">Close_Command_Prompt: Closes the Command Prompt Window<Event Status="4">Test Data Objective : Closes the Command Prompt Window</Event>
+<Event Status="1">Unix Connection disconnected successfully</Event>
+<Event Status="1">Application Component 'Close_Command_Prompt' execution is  successful</Event>
+<Event Status="4">End of Test Case :  GET_SUBSCRIBER_DETAILS_005</Event>
+</AppComponent>
+</TestCase>
+<TestCase Description="GET_SUBSCRIBER_DETAILS_006: Without MSISDN tag" ExecutionEnded="06/10/2016 06:48:07 PM" ExecutionStarted="06/10/2016 06:48:04 PM" Status="1">GET_SUBSCRIBER_DETAILS_006: Without MSISDN tag<AppComponent Description="Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands" ExecutionEnded="06/10/2016 06:48:05 PM" ExecutionStarted="06/10/2016 06:48:04 PM">Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands<Event Status="4">Test Data Objective : Open and Display the Command Prompt Window to execute the commands</Event>
+<Event Status="1">UNIX Server with IP Address '192.168.151.90' has been connected successfully</Event>
+<Event Status="1">Application Component 'Open_Command_Prompt' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type" ExecutionEnded="06/10/2016 06:48:06 PM" ExecutionStarted="06/10/2016 06:48:05 PM">Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type<Event Status="4">Test Data Objective : Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type</Event>
+<Event Status="1">Command Executed for Command_Start: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_006 start  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_05 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'Remote script activity for the testcase started...
+
+' matched with with Expected output 'Remote script activity for the testcase started'</Event>
+<Event Status="1">The xml request : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:head="http://www.plintron.com/header/" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"&gt;&lt;soapenv:Header&gt; &lt;oas:Security&gt;&lt;!--You may enter ANY elements at this point--&gt;&lt;/oas:Security&gt;&lt;head:TRANSACTION_ID&gt;AutomationTran123ss&lt;/head:TRANSACTION_ID&gt;&lt;head:ENTITY&gt;ITGSIM:11:CBOSAUTO&lt;/head:ENTITY&gt;&lt;head:CHANNEL_REFERENCE&gt;CCARE&lt;/head:CHANNEL_REFERENCE&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;DETAILS/&gt;&lt;/GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;' has been sent successfully.</Event>
+<Event Status="1">The xml response : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+&lt;soapenv:Header&gt;
+&lt;ERROR_CODE&gt;955&lt;/ERROR_CODE&gt;
+&lt;ERROR_DESC&gt;XML Parsing Failed: test:1:43 error:  element 'DETAILS' is not allowed for content model '(((MSISDN|IMSI)|ICC_ID),)'&lt;/ERROR_DESC&gt;
+&lt;/soapenv:Header&gt;
+&lt;soapenv:Body&gt;
+&lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;' received successfully.</Event>
+<Event Status="1">'soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Envelope' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">The actual node value of  : '//ERROR_CODE' is '955' and matched with the expected value '955'.</Event>
+<Event Status="1">The actual node value of  : '//ERROR_DESC' is 'XML Parsing Failed: test:1:43 error:  element 'DETAILS' is not allowed for content model '(((MSISDN|IMSI)|ICC_ID),)'' and matched with the expected value 'XML Parsing Failed: test:1:43 error: element 'DETAILS' is not allowed for content model '(((MSISDN|IMSI)|ICC_ID),)''.</Event>
+<Event Status="1">Application Component 'Start_Script_XMLVal_SinglePair' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Stop_Script: Stop the logging process" ExecutionEnded="06/10/2016 06:48:07 PM" ExecutionStarted="06/10/2016 06:48:06 PM">Stop_Script: Stop the logging process<Event Status="4">Test Data Objective : Stop the logging process</Event>
+<Event Status="1">Command Executed for Command_Stop: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_006 stop  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_06 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'pass
+' matched with with Expected output 'pass'</Event>
+<Event Status="1">Application Component 'Stop_Script' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR" ExecutionEnded="06/10/2016 06:48:07 PM" ExecutionStarted="06/10/2016 06:48:07 PM">Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR<Event Status="4">Test Data Objective : Validation of Possible outputs of CDR/TDR data by executing command CDR</Event>
+<Event Status="1">Command Executed for CDR: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_006 CDR  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_07 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'PASS
+' matched with with Expected output 'PASS'</Event>
+<Event Status="1">Application Component 'Validating_CDR' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Close_Command_Prompt: Closes the Command Prompt Window" ExecutionEnded="06/10/2016 06:48:07 PM" ExecutionStarted="06/10/2016 06:48:07 PM">Close_Command_Prompt: Closes the Command Prompt Window<Event Status="4">Test Data Objective : Closes the Command Prompt Window</Event>
+<Event Status="1">Unix Connection disconnected successfully</Event>
+<Event Status="1">Application Component 'Close_Command_Prompt' execution is  successful</Event>
+<Event Status="4">End of Test Case :  GET_SUBSCRIBER_DETAILS_006</Event>
+</AppComponent>
+</TestCase>
+<TestCase Description="GET_SUBSCRIBER_DETAILS_007: GET SUBSCRIBER DETAILS IMSI tag with valid data" ExecutionEnded="06/10/2016 06:48:11 PM" ExecutionStarted="06/10/2016 06:48:07 PM" Status="1">GET_SUBSCRIBER_DETAILS_007: GET SUBSCRIBER DETAILS IMSI tag with valid data<AppComponent Description="Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands" ExecutionEnded="06/10/2016 06:48:08 PM" ExecutionStarted="06/10/2016 06:48:07 PM">Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands<Event Status="4">Test Data Objective : Open and Display the Command Prompt Window to execute the commands</Event>
+<Event Status="1">UNIX Server with IP Address '192.168.151.90' has been connected successfully</Event>
+<Event Status="1">Application Component 'Open_Command_Prompt' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type" ExecutionEnded="06/10/2016 06:48:10 PM" ExecutionStarted="06/10/2016 06:48:08 PM">Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type<Event Status="4">Test Data Objective : Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type</Event>
+<Event Status="1">Command Executed for Command_Start: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_007 start  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_08 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'Remote script activity for the testcase started...
+
+' matched with with Expected output 'Remote script activity for the testcase started'</Event>
+<Event Status="1">The xml request : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:head="http://www.plintron.com/header/" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"&gt;&lt;soapenv:Header&gt; &lt;oas:Security&gt;&lt;!--You may enter ANY elements at this point--&gt;&lt;/oas:Security&gt;&lt;head:TRANSACTION_ID&gt;AutomationTran123ss&lt;/head:TRANSACTION_ID&gt;&lt;head:ENTITY&gt;ITGSIM:11:CBOSAUTO&lt;/head:ENTITY&gt;&lt;head:CHANNEL_REFERENCE&gt;CCARE&lt;/head:CHANNEL_REFERENCE&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;DETAILS&gt;
+&lt;IMSI&gt;999999500051000&lt;/IMSI&gt;&lt;/DETAILS&gt;&lt;/GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;' has been sent successfully.</Event>
+<Event Status="1">The xml response : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+&lt;soapenv:Header&gt;
+&lt;ERROR_CODE&gt;0&lt;/ERROR_CODE&gt;
+&lt;ERROR_DESC&gt;Success&lt;/ERROR_DESC&gt;
+&lt;/soapenv:Header&gt;
+&lt;soapenv:Body&gt;&lt;GET_SUBSCRIBER_DETAILS_RESPONSE&gt;&lt;MSISDN&gt;19911051000&lt;/MSISDN&gt;&lt;ICC_ID&gt;1234567898000510000&lt;/ICC_ID&gt;&lt;IMSI&gt;999999500051000&lt;/IMSI&gt;&lt;PUK_CODE&gt;12329834&lt;/PUK_CODE&gt;&lt;/GET_SUBSCRIBER_DETAILS_RESPONSE&gt;
+&lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;' received successfully.</Event>
+<Event Status="1">'soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Envelope' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">The actual node value of  : '//ERROR_CODE' is '0' and matched with the expected value '0'.</Event>
+<Event Status="1">The actual node value of  : '//ERROR_DESC' is 'Success' and matched with the expected value 'Success'.</Event>
+<Event Status="1">The actual node value of  : '//ICC_ID' is '1234567898000510000' and matched with the expected value '1234567898000510000'.</Event>
+<Event Status="1">The actual node value of  : '//IMSI' is '999999500051000' and matched with the expected value '999999500051000'.</Event>
+<Event Status="1">The actual node value of  : '//PUK_CODE' is '12329834' and matched with the expected value '12329834'.</Event>
+<Event Status="1">Application Component 'Start_Script_XMLVal_SinglePair' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Stop_Script: Stop the logging process" ExecutionEnded="06/10/2016 06:48:11 PM" ExecutionStarted="06/10/2016 06:48:10 PM">Stop_Script: Stop the logging process<Event Status="4">Test Data Objective : Stop the logging process</Event>
+<Event Status="1">Command Executed for Command_Stop: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_007 stop  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_10 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'pass
+' matched with with Expected output 'pass'</Event>
+<Event Status="1">Application Component 'Stop_Script' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR" ExecutionEnded="06/10/2016 06:48:11 PM" ExecutionStarted="06/10/2016 06:48:11 PM">Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR<Event Status="4">Test Data Objective : Validation of Possible outputs of CDR/TDR data by executing command CDR</Event>
+<Event Status="1">Command Executed for CDR: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_007 CDR  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_11 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'PASS
+' matched with with Expected output 'PASS'</Event>
+<Event Status="1">Application Component 'Validating_CDR' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Close_Command_Prompt: Closes the Command Prompt Window" ExecutionEnded="06/10/2016 06:48:11 PM" ExecutionStarted="06/10/2016 06:48:11 PM">Close_Command_Prompt: Closes the Command Prompt Window<Event Status="4">Test Data Objective : Closes the Command Prompt Window</Event>
+<Event Status="1">Unix Connection disconnected successfully</Event>
+<Event Status="1">Application Component 'Close_Command_Prompt' execution is  successful</Event>
+<Event Status="4">End of Test Case :  GET_SUBSCRIBER_DETAILS_007</Event>
+</AppComponent>
+</TestCase>
+<TestCase Description="GET_SUBSCRIBER_DETAILS_008: GET SUBSCRIBER DETAILS IMSI tag with Alhanumeric" ExecutionEnded="06/10/2016 06:48:14 PM" ExecutionStarted="06/10/2016 06:48:11 PM" Status="1">GET_SUBSCRIBER_DETAILS_008: GET SUBSCRIBER DETAILS IMSI tag with Alhanumeric<AppComponent Description="Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands" ExecutionEnded="06/10/2016 06:48:12 PM" ExecutionStarted="06/10/2016 06:48:11 PM">Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands<Event Status="4">Test Data Objective : Open and Display the Command Prompt Window to execute the commands</Event>
+<Event Status="1">UNIX Server with IP Address '192.168.151.90' has been connected successfully</Event>
+<Event Status="1">Application Component 'Open_Command_Prompt' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type" ExecutionEnded="06/10/2016 06:48:13 PM" ExecutionStarted="06/10/2016 06:48:12 PM">Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type<Event Status="4">Test Data Objective : Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type</Event>
+<Event Status="1">Command Executed for Command_Start: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_008 start  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_12 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'Remote script activity for the testcase started...
+
+' matched with with Expected output 'Remote script activity for the testcase started'</Event>
+<Event Status="1">The xml request : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:head="http://www.plintron.com/header/" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"&gt;&lt;soapenv:Header&gt; &lt;oas:Security&gt;&lt;!--You may enter ANY elements at this point--&gt;&lt;/oas:Security&gt;&lt;head:TRANSACTION_ID&gt;AutomationTran123ss&lt;/head:TRANSACTION_ID&gt;&lt;head:ENTITY&gt;ITGSIM:11:CBOSAUTO&lt;/head:ENTITY&gt;&lt;head:CHANNEL_REFERENCE&gt;CCARE&lt;/head:CHANNEL_REFERENCE&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;DETAILS&gt;
+&lt;IMSI&gt;76ab51000001405&lt;/IMSI&gt;&lt;/DETAILS&gt;&lt;/GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;' has been sent successfully.</Event>
+<Event Status="1">The xml response : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+&lt;soapenv:Header&gt;
+&lt;ERROR_CODE&gt;955&lt;/ERROR_CODE&gt;
+&lt;ERROR_DESC&gt;XML Parsing Failed: test:2:29 error:  value '76ab51000001405' does not match regular expression facet '[0-9]{15}'&lt;/ERROR_DESC&gt;
+&lt;/soapenv:Header&gt;
+&lt;soapenv:Body&gt;
+&lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;' received successfully.</Event>
+<Event Status="1">'soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Envelope' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">The actual node value of  : '//ERROR_CODE' is '955' and matched with the expected value '955'.</Event>
+<Event Status="1">The actual node value of  : '//ERROR_DESC' is 'XML Parsing Failed: test:2:29 error:  value '76ab51000001405' does not match regular expression facet '[0-9]{15}'' and matched with the expected value 'XML Parsing Failed: test:1:70 error:  value '76ab51000001405' does not match regular expression facet '[0-9]{15}''.</Event>
+<Event Status="1">Application Component 'Start_Script_XMLVal_SinglePair' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Stop_Script: Stop the logging process" ExecutionEnded="06/10/2016 06:48:14 PM" ExecutionStarted="06/10/2016 06:48:13 PM">Stop_Script: Stop the logging process<Event Status="4">Test Data Objective : Stop the logging process</Event>
+<Event Status="1">Command Executed for Command_Stop: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_008 stop  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_13 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'pass
+' matched with with Expected output 'pass'</Event>
+<Event Status="1">Application Component 'Stop_Script' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR" ExecutionEnded="06/10/2016 06:48:14 PM" ExecutionStarted="06/10/2016 06:48:14 PM">Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR<Event Status="4">Test Data Objective : Validation of Possible outputs of CDR/TDR data by executing command CDR</Event>
+<Event Status="1">Command Executed for CDR: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_008 CDR  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_14 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'PASS
+' matched with with Expected output 'PASS'</Event>
+<Event Status="1">Application Component 'Validating_CDR' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Close_Command_Prompt: Closes the Command Prompt Window" ExecutionEnded="06/10/2016 06:48:14 PM" ExecutionStarted="06/10/2016 06:48:14 PM">Close_Command_Prompt: Closes the Command Prompt Window<Event Status="4">Test Data Objective : Closes the Command Prompt Window</Event>
+<Event Status="1">Unix Connection disconnected successfully</Event>
+<Event Status="1">Application Component 'Close_Command_Prompt' execution is  successful</Event>
+<Event Status="4">End of Test Case :  GET_SUBSCRIBER_DETAILS_008</Event>
+</AppComponent>
+</TestCase>
+<TestCase Description="GET_SUBSCRIBER_DETAILS_009: GET SUBSCRIBER DETAILS IMSI tag with special char" ExecutionEnded="06/10/2016 06:48:19 PM" ExecutionStarted="06/10/2016 06:48:14 PM" Status="1">GET_SUBSCRIBER_DETAILS_009: GET SUBSCRIBER DETAILS IMSI tag with special char<AppComponent Description="Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands" ExecutionEnded="06/10/2016 06:48:15 PM" ExecutionStarted="06/10/2016 06:48:14 PM">Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands<Event Status="4">Test Data Objective : Open and Display the Command Prompt Window to execute the commands</Event>
+<Event Status="1">UNIX Server with IP Address '192.168.151.90' has been connected successfully</Event>
+<Event Status="1">Application Component 'Open_Command_Prompt' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type" ExecutionEnded="06/10/2016 06:48:18 PM" ExecutionStarted="06/10/2016 06:48:15 PM">Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type<Event Status="4">Test Data Objective : Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type</Event>
+<Event Status="1">Command Executed for Command_Start: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_009 start  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_15 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'Remote script activity for the testcase started...
+
+' matched with with Expected output 'Remote script activity for the testcase started'</Event>
+<Event Status="1">The xml request : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:head="http://www.plintron.com/header/" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"&gt;&lt;soapenv:Header&gt; &lt;oas:Security&gt;&lt;!--You may enter ANY elements at this point--&gt;&lt;/oas:Security&gt;&lt;head:TRANSACTION_ID&gt;AutomationTran123ss&lt;/head:TRANSACTION_ID&gt;&lt;head:ENTITY&gt;ITGSIM:11:CBOSAUTO&lt;/head:ENTITY&gt;&lt;head:CHANNEL_REFERENCE&gt;CCARE&lt;/head:CHANNEL_REFERENCE&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;DETAILS&gt;
+&lt;IMSI&gt;76@#51000001405&lt;/IMSI&gt;&lt;/DETAILS&gt;&lt;/GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;' has been sent successfully.</Event>
+<Event Status="1">The xml response : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+&lt;soapenv:Header&gt;
+&lt;ERROR_CODE&gt;955&lt;/ERROR_CODE&gt;
+&lt;ERROR_DESC&gt;XML Parsing Failed: test:2:29 error:  value '76@#51000001405' does not match regular expression facet '[0-9]{15}'&lt;/ERROR_DESC&gt;
+&lt;/soapenv:Header&gt;
+&lt;soapenv:Body&gt;
+&lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;' received successfully.</Event>
+<Event Status="1">'soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Envelope' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">The actual node value of  : '//ERROR_CODE' is '955' and matched with the expected value '955'.</Event>
+<Event Status="1">The actual node value of  : '//ERROR_DESC' is 'XML Parsing Failed: test:2:29 error:  value '76@#51000001405' does not match regular expression facet '[0-9]{15}'' and matched with the expected value 'XML Parsing Failed: test:1:70 error:  value '76@#51000001405' does not match regular expression facet '[0-9]{15}''.</Event>
+<Event Status="1">Application Component 'Start_Script_XMLVal_SinglePair' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Stop_Script: Stop the logging process" ExecutionEnded="06/10/2016 06:48:18 PM" ExecutionStarted="06/10/2016 06:48:18 PM">Stop_Script: Stop the logging process<Event Status="4">Test Data Objective : Stop the logging process</Event>
+<Event Status="1">Command Executed for Command_Stop: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_009 stop  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_18 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'pass
+' matched with with Expected output 'pass'</Event>
+<Event Status="1">Application Component 'Stop_Script' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR" ExecutionEnded="06/10/2016 06:48:19 PM" ExecutionStarted="06/10/2016 06:48:18 PM">Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR<Event Status="4">Test Data Objective : Validation of Possible outputs of CDR/TDR data by executing command CDR</Event>
+<Event Status="1">Command Executed for CDR: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_009 CDR  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_18 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'PASS
+' matched with with Expected output 'PASS'</Event>
+<Event Status="1">Application Component 'Validating_CDR' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Close_Command_Prompt: Closes the Command Prompt Window" ExecutionEnded="06/10/2016 06:48:19 PM" ExecutionStarted="06/10/2016 06:48:19 PM">Close_Command_Prompt: Closes the Command Prompt Window<Event Status="4">Test Data Objective : Closes the Command Prompt Window</Event>
+<Event Status="1">Unix Connection disconnected successfully</Event>
+<Event Status="1">Application Component 'Close_Command_Prompt' execution is  successful</Event>
+<Event Status="4">End of Test Case :  GET_SUBSCRIBER_DETAILS_009</Event>
+</AppComponent>
+</TestCase>
+<TestCase Description="GET_SUBSCRIBER_DETAILS_010: GET SUBSCRIBER DETAILS IMSI  tag with zero" ExecutionEnded="06/10/2016 06:48:22 PM" ExecutionStarted="06/10/2016 06:48:19 PM" Status="1">GET_SUBSCRIBER_DETAILS_010: GET SUBSCRIBER DETAILS IMSI  tag with zero<AppComponent Description="Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands" ExecutionEnded="06/10/2016 06:48:19 PM" ExecutionStarted="06/10/2016 06:48:19 PM">Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands<Event Status="4">Test Data Objective : Open and Display the Command Prompt Window to execute the commands</Event>
+<Event Status="1">UNIX Server with IP Address '192.168.151.90' has been connected successfully</Event>
+<Event Status="1">Application Component 'Open_Command_Prompt' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type" ExecutionEnded="06/10/2016 06:48:22 PM" ExecutionStarted="06/10/2016 06:48:19 PM">Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type<Event Status="4">Test Data Objective : Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type</Event>
+<Event Status="1">Command Executed for Command_Start: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_010 start  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_19 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'Remote script activity for the testcase started...
+
+' matched with with Expected output 'Remote script activity for the testcase started'</Event>
+<Event Status="1">The xml request : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:head="http://www.plintron.com/header/" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"&gt;&lt;soapenv:Header&gt; &lt;oas:Security&gt;&lt;!--You may enter ANY elements at this point--&gt;&lt;/oas:Security&gt;&lt;head:TRANSACTION_ID&gt;AutomationTran123ss&lt;/head:TRANSACTION_ID&gt;&lt;head:ENTITY&gt;ITGSIM:11:CBOSAUTO&lt;/head:ENTITY&gt;&lt;head:CHANNEL_REFERENCE&gt;CCARE&lt;/head:CHANNEL_REFERENCE&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;DETAILS&gt;
+&lt;IMSI&gt;0&lt;/IMSI&gt;&lt;/DETAILS&gt;&lt;/GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;' has been sent successfully.</Event>
+<Event Status="1">The xml response : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+&lt;soapenv:Header&gt;
+&lt;ERROR_CODE&gt;955&lt;/ERROR_CODE&gt;
+&lt;ERROR_DESC&gt;XML Parsing Failed: test:2:15 error:  value '0' does not match regular expression facet '[0-9]{15}'&lt;/ERROR_DESC&gt;
+&lt;/soapenv:Header&gt;
+&lt;soapenv:Body&gt;
+&lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;' received successfully.</Event>
+<Event Status="1">'soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Envelope' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">The actual node value of  : '//ERROR_CODE' is '955' and matched with the expected value '955'.</Event>
+<Event Status="1">The actual node value of  : '//ERROR_DESC' is 'XML Parsing Failed: test:2:15 error:  value '0' does not match regular expression facet '[0-9]{15}'' and matched with the expected value 'XML Parsing Failed: test:1:56 error:  value '0' does not match regular expression facet '[0-9]{15}''.</Event>
+<Event Status="1">Application Component 'Start_Script_XMLVal_SinglePair' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Stop_Script: Stop the logging process" ExecutionEnded="06/10/2016 06:48:22 PM" ExecutionStarted="06/10/2016 06:48:22 PM">Stop_Script: Stop the logging process<Event Status="4">Test Data Objective : Stop the logging process</Event>
+<Event Status="1">Command Executed for Command_Stop: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_010 stop  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_22 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'pass
+' matched with with Expected output 'pass'</Event>
+<Event Status="1">Application Component 'Stop_Script' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR" ExecutionEnded="06/10/2016 06:48:22 PM" ExecutionStarted="06/10/2016 06:48:22 PM">Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR<Event Status="4">Test Data Objective : Validation of Possible outputs of CDR/TDR data by executing command CDR</Event>
+<Event Status="1">Command Executed for CDR: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_010 CDR  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_22 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'PASS
+' matched with with Expected output 'PASS'</Event>
+<Event Status="1">Application Component 'Validating_CDR' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Close_Command_Prompt: Closes the Command Prompt Window" ExecutionEnded="06/10/2016 06:48:22 PM" ExecutionStarted="06/10/2016 06:48:22 PM">Close_Command_Prompt: Closes the Command Prompt Window<Event Status="4">Test Data Objective : Closes the Command Prompt Window</Event>
+<Event Status="1">Unix Connection disconnected successfully</Event>
+<Event Status="1">Application Component 'Close_Command_Prompt' execution is  successful</Event>
+<Event Status="4">End of Test Case :  GET_SUBSCRIBER_DETAILS_010</Event>
+</AppComponent>
+</TestCase>
+<TestCase Description="GET_SUBSCRIBER_DETAILS_011: GET SUBSCRIBER DETAILS IMSI tag  with empty" ExecutionEnded="06/10/2016 06:48:26 PM" ExecutionStarted="06/10/2016 06:48:22 PM" Status="1">GET_SUBSCRIBER_DETAILS_011: GET SUBSCRIBER DETAILS IMSI tag  with empty<AppComponent Description="Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands" ExecutionEnded="06/10/2016 06:48:23 PM" ExecutionStarted="06/10/2016 06:48:22 PM">Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands<Event Status="4">Test Data Objective : Open and Display the Command Prompt Window to execute the commands</Event>
+<Event Status="1">UNIX Server with IP Address '192.168.151.90' has been connected successfully</Event>
+<Event Status="1">Application Component 'Open_Command_Prompt' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type" ExecutionEnded="06/10/2016 06:48:25 PM" ExecutionStarted="06/10/2016 06:48:23 PM">Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type<Event Status="4">Test Data Objective : Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type</Event>
+<Event Status="1">Command Executed for Command_Start: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_011 start  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_23 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'Remote script activity for the testcase started...
+
+' matched with with Expected output 'Remote script activity for the testcase started'</Event>
+<Event Status="1">The xml request : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:head="http://www.plintron.com/header/" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"&gt;&lt;soapenv:Header&gt; &lt;oas:Security&gt;&lt;!--You may enter ANY elements at this point--&gt;&lt;/oas:Security&gt;&lt;head:TRANSACTION_ID&gt;AutomationTran123ss&lt;/head:TRANSACTION_ID&gt;&lt;head:ENTITY&gt;ITGSIM:11:CBOSAUTO&lt;/head:ENTITY&gt;&lt;head:CHANNEL_REFERENCE&gt;CCARE&lt;/head:CHANNEL_REFERENCE&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;DETAILS&gt;
+&lt;IMSI/&gt;&lt;/DETAILS&gt;&lt;/GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;' has been sent successfully.</Event>
+<Event Status="1">The xml response : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+&lt;soapenv:Header&gt;
+&lt;ERROR_CODE&gt;955&lt;/ERROR_CODE&gt;
+&lt;ERROR_DESC&gt;XML Parsing Failed: test:2:8 error:  value '' does not match regular expression facet '[0-9]{15}'&lt;/ERROR_DESC&gt;
+&lt;/soapenv:Header&gt;
+&lt;soapenv:Body&gt;
+&lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;' received successfully.</Event>
+<Event Status="1">'soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Envelope' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">The actual node value of  : '//ERROR_CODE' is '955' and matched with the expected value '955'.</Event>
+<Event Status="1">The actual node value of  : '//ERROR_DESC' is 'XML Parsing Failed: test:2:8 error:  value '' does not match regular expression facet '[0-9]{15}'' and matched with the expected value 'XML Parsing Failed: test:1:55 error:  value '' does not match regular expression facet '[0-9]{15}''.</Event>
+<Event Status="1">Application Component 'Start_Script_XMLVal_SinglePair' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Stop_Script: Stop the logging process" ExecutionEnded="06/10/2016 06:48:25 PM" ExecutionStarted="06/10/2016 06:48:25 PM">Stop_Script: Stop the logging process<Event Status="4">Test Data Objective : Stop the logging process</Event>
+<Event Status="1">Command Executed for Command_Stop: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_011 stop  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_25 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'pass
+' matched with with Expected output 'pass'</Event>
+<Event Status="1">Application Component 'Stop_Script' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR" ExecutionEnded="06/10/2016 06:48:26 PM" ExecutionStarted="06/10/2016 06:48:25 PM">Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR<Event Status="4">Test Data Objective : Validation of Possible outputs of CDR/TDR data by executing command CDR</Event>
+<Event Status="1">Command Executed for CDR: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_011 CDR  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_25 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'PASS
+' matched with with Expected output 'PASS'</Event>
+<Event Status="1">Application Component 'Validating_CDR' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Close_Command_Prompt: Closes the Command Prompt Window" ExecutionEnded="06/10/2016 06:48:26 PM" ExecutionStarted="06/10/2016 06:48:26 PM">Close_Command_Prompt: Closes the Command Prompt Window<Event Status="4">Test Data Objective : Closes the Command Prompt Window</Event>
+<Event Status="1">Unix Connection disconnected successfully</Event>
+<Event Status="1">Application Component 'Close_Command_Prompt' execution is  successful</Event>
+<Event Status="4">End of Test Case :  GET_SUBSCRIBER_DETAILS_011</Event>
+</AppComponent>
+</TestCase>
+<TestCase Description="GET_SUBSCRIBER_DETAILS_012: GET SUBSCRIBER DETAILS without IMSI tag" ExecutionEnded="06/10/2016 06:48:29 PM" ExecutionStarted="06/10/2016 06:48:26 PM" Status="1">GET_SUBSCRIBER_DETAILS_012: GET SUBSCRIBER DETAILS without IMSI tag<AppComponent Description="Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands" ExecutionEnded="06/10/2016 06:48:26 PM" ExecutionStarted="06/10/2016 06:48:26 PM">Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands<Event Status="4">Test Data Objective : Open and Display the Command Prompt Window to execute the commands</Event>
+<Event Status="1">UNIX Server with IP Address '192.168.151.90' has been connected successfully</Event>
+<Event Status="1">Application Component 'Open_Command_Prompt' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type" ExecutionEnded="06/10/2016 06:48:28 PM" ExecutionStarted="06/10/2016 06:48:26 PM">Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type<Event Status="4">Test Data Objective : Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type</Event>
+<Event Status="1">Command Executed for Command_Start: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_012 start  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_26 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'Remote script activity for the testcase started...
+
+' matched with with Expected output 'Remote script activity for the testcase started'</Event>
+<Event Status="1">The xml request : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:head="http://www.plintron.com/header/" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"&gt;&lt;soapenv:Header&gt; &lt;oas:Security&gt;&lt;!--You may enter ANY elements at this point--&gt;&lt;/oas:Security&gt;&lt;head:TRANSACTION_ID&gt;AutomationTran123ss&lt;/head:TRANSACTION_ID&gt;&lt;head:ENTITY&gt;ITGSIM:11:CBOSAUTO&lt;/head:ENTITY&gt;&lt;head:CHANNEL_REFERENCE&gt;CCARE&lt;/head:CHANNEL_REFERENCE&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;DETAILS/&gt;&lt;/GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;' has been sent successfully.</Event>
+<Event Status="1">The xml response : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+&lt;soapenv:Header&gt;
+&lt;ERROR_CODE&gt;955&lt;/ERROR_CODE&gt;
+&lt;ERROR_DESC&gt;XML Parsing Failed: test:1:43 error:  element 'DETAILS' is not allowed for content model '(((MSISDN|IMSI)|ICC_ID),)'&lt;/ERROR_DESC&gt;
+&lt;/soapenv:Header&gt;
+&lt;soapenv:Body&gt;
+&lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;' received successfully.</Event>
+<Event Status="1">'soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Envelope' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">The actual node value of  : '//ERROR_CODE' is '955' and matched with the expected value '955'.</Event>
+<Event Status="1">The actual node value of  : '//ERROR_DESC' is 'XML Parsing Failed: test:1:43 error:  element 'DETAILS' is not allowed for content model '(((MSISDN|IMSI)|ICC_ID),)'' and matched with the expected value 'XML Parsing Failed: test:1:43 error: element 'DETAILS' is not allowed for content model '(((MSISDN|IMSI)|ICC_ID),)''.</Event>
+<Event Status="1">Application Component 'Start_Script_XMLVal_SinglePair' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Stop_Script: Stop the logging process" ExecutionEnded="06/10/2016 06:48:29 PM" ExecutionStarted="06/10/2016 06:48:28 PM">Stop_Script: Stop the logging process<Event Status="4">Test Data Objective : Stop the logging process</Event>
+<Event Status="1">Command Executed for Command_Stop: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_012 stop  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_28 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'pass
+' matched with with Expected output 'pass'</Event>
+<Event Status="1">Application Component 'Stop_Script' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR" ExecutionEnded="06/10/2016 06:48:29 PM" ExecutionStarted="06/10/2016 06:48:29 PM">Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR<Event Status="4">Test Data Objective : Validation of Possible outputs of CDR/TDR data by executing command CDR</Event>
+<Event Status="1">Command Executed for CDR: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_012 CDR  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_29 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'PASS
+' matched with with Expected output 'PASS'</Event>
+<Event Status="1">Application Component 'Validating_CDR' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Close_Command_Prompt: Closes the Command Prompt Window" ExecutionEnded="06/10/2016 06:48:29 PM" ExecutionStarted="06/10/2016 06:48:29 PM">Close_Command_Prompt: Closes the Command Prompt Window<Event Status="4">Test Data Objective : Closes the Command Prompt Window</Event>
+<Event Status="1">Unix Connection disconnected successfully</Event>
+<Event Status="1">Application Component 'Close_Command_Prompt' execution is  successful</Event>
+<Event Status="4">End of Test Case :  GET_SUBSCRIBER_DETAILS_012</Event>
+</AppComponent>
+</TestCase>
+<TestCase Description="GET_SUBSCRIBER_DETAILS_013: GET SUBSCRIBER DETAILS ICC_ID tag with valid data" ExecutionEnded="06/10/2016 06:48:33 PM" ExecutionStarted="06/10/2016 06:48:29 PM" Status="1">GET_SUBSCRIBER_DETAILS_013: GET SUBSCRIBER DETAILS ICC_ID tag with valid data<AppComponent Description="Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands" ExecutionEnded="06/10/2016 06:48:30 PM" ExecutionStarted="06/10/2016 06:48:29 PM">Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands<Event Status="4">Test Data Objective : Open and Display the Command Prompt Window to execute the commands</Event>
+<Event Status="1">UNIX Server with IP Address '192.168.151.90' has been connected successfully</Event>
+<Event Status="1">Application Component 'Open_Command_Prompt' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type" ExecutionEnded="06/10/2016 06:48:32 PM" ExecutionStarted="06/10/2016 06:48:30 PM">Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type<Event Status="4">Test Data Objective : Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type</Event>
+<Event Status="1">Command Executed for Command_Start: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_013 start  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_30 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'Remote script activity for the testcase started...
+
+' matched with with Expected output 'Remote script activity for the testcase started'</Event>
+<Event Status="1">The xml request : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:head="http://www.plintron.com/header/" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"&gt;&lt;soapenv:Header&gt; &lt;oas:Security&gt;&lt;!--You may enter ANY elements at this point--&gt;&lt;/oas:Security&gt;&lt;head:TRANSACTION_ID&gt;AutomationTran123ss&lt;/head:TRANSACTION_ID&gt;&lt;head:ENTITY&gt;ITGSIM:11:CBOSAUTO&lt;/head:ENTITY&gt;&lt;head:CHANNEL_REFERENCE&gt;CCARE&lt;/head:CHANNEL_REFERENCE&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;DETAILS&gt;
+&lt;ICC_ID&gt;1234567898000510000&lt;/ICC_ID&gt;&lt;/DETAILS&gt;&lt;/GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;' has been sent successfully.</Event>
+<Event Status="1">The xml response : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+&lt;soapenv:Header&gt;
+&lt;ERROR_CODE&gt;0&lt;/ERROR_CODE&gt;
+&lt;ERROR_DESC&gt;Success&lt;/ERROR_DESC&gt;
+&lt;/soapenv:Header&gt;
+&lt;soapenv:Body&gt;&lt;GET_SUBSCRIBER_DETAILS_RESPONSE&gt;&lt;MSISDN&gt;19911051000&lt;/MSISDN&gt;&lt;ICC_ID&gt;1234567898000510000&lt;/ICC_ID&gt;&lt;IMSI&gt;999999500051000&lt;/IMSI&gt;&lt;PUK_CODE&gt;12329834&lt;/PUK_CODE&gt;&lt;/GET_SUBSCRIBER_DETAILS_RESPONSE&gt;
+&lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;' received successfully.</Event>
+<Event Status="1">'soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Envelope' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">The actual node value of  : '//ERROR_CODE' is '0' and matched with the expected value '0'.</Event>
+<Event Status="1">The actual node value of  : '//ERROR_DESC' is 'Success' and matched with the expected value 'Success'.</Event>
+<Event Status="1">The actual node value of  : '//MSISDN' is '19911051000' and matched with the expected value '19911051000'.</Event>
+<Event Status="1">The actual node value of  : '//ICC_ID' is '1234567898000510000' and matched with the expected value '1234567898000510000'.</Event>
+<Event Status="1">The actual node value of  : '//IMSI' is '999999500051000' and matched with the expected value '999999500051000'.</Event>
+<Event Status="1">The actual node value of  : '//PUK_CODE' is '12329834' and matched with the expected value '12329834'.</Event>
+<Event Status="1">Application Component 'Start_Script_XMLVal_SinglePair' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Stop_Script: Stop the logging process" ExecutionEnded="06/10/2016 06:48:32 PM" ExecutionStarted="06/10/2016 06:48:32 PM">Stop_Script: Stop the logging process<Event Status="4">Test Data Objective : Stop the logging process</Event>
+<Event Status="1">Command Executed for Command_Stop: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_013 stop  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_32 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'pass
+' matched with with Expected output 'pass'</Event>
+<Event Status="1">Application Component 'Stop_Script' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR" ExecutionEnded="06/10/2016 06:48:32 PM" ExecutionStarted="06/10/2016 06:48:32 PM">Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR<Event Status="4">Test Data Objective : Validation of Possible outputs of CDR/TDR data by executing command CDR</Event>
+<Event Status="1">Command Executed for CDR: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_013 CDR  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_32 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'PASS
+' matched with with Expected output 'PASS'</Event>
+<Event Status="1">Application Component 'Validating_CDR' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Close_Command_Prompt: Closes the Command Prompt Window" ExecutionEnded="06/10/2016 06:48:33 PM" ExecutionStarted="06/10/2016 06:48:32 PM">Close_Command_Prompt: Closes the Command Prompt Window<Event Status="4">Test Data Objective : Closes the Command Prompt Window</Event>
+<Event Status="1">Unix Connection disconnected successfully</Event>
+<Event Status="1">Application Component 'Close_Command_Prompt' execution is  successful</Event>
+<Event Status="4">End of Test Case :  GET_SUBSCRIBER_DETAILS_013</Event>
+</AppComponent>
+</TestCase>
+<TestCase Description="GET_SUBSCRIBER_DETAILS_014: GET SUBSCRIBER DETAILS ICC_ID tag with Alhanumeric" ExecutionEnded="06/10/2016 06:48:36 PM" ExecutionStarted="06/10/2016 06:48:33 PM" Status="1">GET_SUBSCRIBER_DETAILS_014: GET SUBSCRIBER DETAILS ICC_ID tag with Alhanumeric<AppComponent Description="Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands" ExecutionEnded="06/10/2016 06:48:33 PM" ExecutionStarted="06/10/2016 06:48:33 PM">Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands<Event Status="4">Test Data Objective : Open and Display the Command Prompt Window to execute the commands</Event>
+<Event Status="1">UNIX Server with IP Address '192.168.151.90' has been connected successfully</Event>
+<Event Status="1">Application Component 'Open_Command_Prompt' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type" ExecutionEnded="06/10/2016 06:48:35 PM" ExecutionStarted="06/10/2016 06:48:33 PM">Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type<Event Status="4">Test Data Objective : Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type</Event>
+<Event Status="1">Command Executed for Command_Start: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_014 start  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_33 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'Remote script activity for the testcase started...
+
+' matched with with Expected output 'Remote script activity for the testcase started'</Event>
+<Event Status="1">The xml request : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:head="http://www.plintron.com/header/" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"&gt;&lt;soapenv:Header&gt; &lt;oas:Security&gt;&lt;!--You may enter ANY elements at this point--&gt;&lt;/oas:Security&gt;&lt;head:TRANSACTION_ID&gt;AutomationTran123ss&lt;/head:TRANSACTION_ID&gt;&lt;head:ENTITY&gt;ITGSIM:11:CBOSAUTO&lt;/head:ENTITY&gt;&lt;head:CHANNEL_REFERENCE&gt;CCARE&lt;/head:CHANNEL_REFERENCE&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;DETAILS&gt;
+&lt;ICC_ID&gt;46av260478351814068&lt;/ICC_ID&gt;&lt;/DETAILS&gt;&lt;/GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;' has been sent successfully.</Event>
+<Event Status="1">The xml response : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+&lt;soapenv:Header&gt;
+&lt;ERROR_CODE&gt;955&lt;/ERROR_CODE&gt;
+&lt;ERROR_DESC&gt;XML Parsing Failed: test:2:37 error:  value '46av260478351814068' does not match regular expression facet '\d{19,20}'&lt;/ERROR_DESC&gt;
+&lt;/soapenv:Header&gt;
+&lt;soapenv:Body&gt;
+&lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;' received successfully.</Event>
+<Event Status="1">'soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Envelope' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">The actual node value of  : '//ERROR_CODE' is '955' and matched with the expected value '955'.</Event>
+<Event Status="1">The actual node value of  : '//ERROR_DESC' is 'XML Parsing Failed: test:2:37 error:  value '46av260478351814068' does not match regular expression facet '\d{19,20}'' and matched with the expected value 'XML Parsing Failed: test:1:78 error:  value '46av260478351814068' does not match regular expression facet '\d{19,20}''.</Event>
+<Event Status="1">Application Component 'Start_Script_XMLVal_SinglePair' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Stop_Script: Stop the logging process" ExecutionEnded="06/10/2016 06:48:35 PM" ExecutionStarted="06/10/2016 06:48:35 PM">Stop_Script: Stop the logging process<Event Status="4">Test Data Objective : Stop the logging process</Event>
+<Event Status="1">Command Executed for Command_Stop: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_014 stop  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_35 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'pass
+' matched with with Expected output 'pass'</Event>
+<Event Status="1">Application Component 'Stop_Script' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR" ExecutionEnded="06/10/2016 06:48:36 PM" ExecutionStarted="06/10/2016 06:48:35 PM">Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR<Event Status="4">Test Data Objective : Validation of Possible outputs of CDR/TDR data by executing command CDR</Event>
+<Event Status="1">Command Executed for CDR: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_014 CDR  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_35 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'PASS
+' matched with with Expected output 'PASS'</Event>
+<Event Status="1">Application Component 'Validating_CDR' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Close_Command_Prompt: Closes the Command Prompt Window" ExecutionEnded="06/10/2016 06:48:36 PM" ExecutionStarted="06/10/2016 06:48:36 PM">Close_Command_Prompt: Closes the Command Prompt Window<Event Status="4">Test Data Objective : Closes the Command Prompt Window</Event>
+<Event Status="1">Unix Connection disconnected successfully</Event>
+<Event Status="1">Application Component 'Close_Command_Prompt' execution is  successful</Event>
+<Event Status="4">End of Test Case :  GET_SUBSCRIBER_DETAILS_014</Event>
+</AppComponent>
+</TestCase>
+<TestCase Description="GET_SUBSCRIBER_DETAILS_015: GET SUBSCRIBER DETAILS ICC_ID tag with special char" ExecutionEnded="06/10/2016 06:48:39 PM" ExecutionStarted="06/10/2016 06:48:36 PM" Status="1">GET_SUBSCRIBER_DETAILS_015: GET SUBSCRIBER DETAILS ICC_ID tag with special char<AppComponent Description="Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands" ExecutionEnded="06/10/2016 06:48:36 PM" ExecutionStarted="06/10/2016 06:48:36 PM">Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands<Event Status="4">Test Data Objective : Open and Display the Command Prompt Window to execute the commands</Event>
+<Event Status="1">UNIX Server with IP Address '192.168.151.90' has been connected successfully</Event>
+<Event Status="1">Application Component 'Open_Command_Prompt' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type" ExecutionEnded="06/10/2016 06:48:38 PM" ExecutionStarted="06/10/2016 06:48:36 PM">Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type<Event Status="4">Test Data Objective : Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type</Event>
+<Event Status="1">Command Executed for Command_Start: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_015 start  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_36 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'Remote script activity for the testcase started...
+
+' matched with with Expected output 'Remote script activity for the testcase started'</Event>
+<Event Status="1">The xml request : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:head="http://www.plintron.com/header/" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"&gt;&lt;soapenv:Header&gt; &lt;oas:Security&gt;&lt;!--You may enter ANY elements at this point--&gt;&lt;/oas:Security&gt;&lt;head:TRANSACTION_ID&gt;AutomationTran123ss&lt;/head:TRANSACTION_ID&gt;&lt;head:ENTITY&gt;ITGSIM:11:CBOSAUTO&lt;/head:ENTITY&gt;&lt;head:CHANNEL_REFERENCE&gt;CCARE&lt;/head:CHANNEL_REFERENCE&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;DETAILS&gt;
+&lt;ICC_ID&gt;46@#260478351814068&lt;/ICC_ID&gt;&lt;/DETAILS&gt;&lt;/GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;' has been sent successfully.</Event>
+<Event Status="1">The xml response : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+&lt;soapenv:Header&gt;
+&lt;ERROR_CODE&gt;955&lt;/ERROR_CODE&gt;
+&lt;ERROR_DESC&gt;XML Parsing Failed: test:2:37 error:  value '46@#260478351814068' does not match regular expression facet '\d{19,20}'&lt;/ERROR_DESC&gt;
+&lt;/soapenv:Header&gt;
+&lt;soapenv:Body&gt;
+&lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;' received successfully.</Event>
+<Event Status="1">'soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Envelope' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">The actual node value of  : '//ERROR_CODE' is '955' and matched with the expected value '955'.</Event>
+<Event Status="1">The actual node value of  : '//ERROR_DESC' is 'XML Parsing Failed: test:2:37 error:  value '46@#260478351814068' does not match regular expression facet '\d{19,20}'' and matched with the expected value 'XML Parsing Failed: test:1:78 error:  value '46@#260478351814068' does not match regular expression facet '\d{19,20}''.</Event>
+<Event Status="1">Application Component 'Start_Script_XMLVal_SinglePair' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Stop_Script: Stop the logging process" ExecutionEnded="06/10/2016 06:48:39 PM" ExecutionStarted="06/10/2016 06:48:38 PM">Stop_Script: Stop the logging process<Event Status="4">Test Data Objective : Stop the logging process</Event>
+<Event Status="1">Command Executed for Command_Stop: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_015 stop  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_38 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'pass
+' matched with with Expected output 'pass'</Event>
+<Event Status="1">Application Component 'Stop_Script' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR" ExecutionEnded="06/10/2016 06:48:39 PM" ExecutionStarted="06/10/2016 06:48:39 PM">Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR<Event Status="4">Test Data Objective : Validation of Possible outputs of CDR/TDR data by executing command CDR</Event>
+<Event Status="1">Command Executed for CDR: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_015 CDR  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_39 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'PASS
+' matched with with Expected output 'PASS'</Event>
+<Event Status="1">Application Component 'Validating_CDR' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Close_Command_Prompt: Closes the Command Prompt Window" ExecutionEnded="06/10/2016 06:48:39 PM" ExecutionStarted="06/10/2016 06:48:39 PM">Close_Command_Prompt: Closes the Command Prompt Window<Event Status="4">Test Data Objective : Closes the Command Prompt Window</Event>
+<Event Status="1">Unix Connection disconnected successfully</Event>
+<Event Status="1">Application Component 'Close_Command_Prompt' execution is  successful</Event>
+<Event Status="4">End of Test Case :  GET_SUBSCRIBER_DETAILS_015</Event>
+</AppComponent>
+</TestCase>
+<TestCase Description="GET_SUBSCRIBER_DETAILS_016: GET SUBSCRIBER DETAILS ICC_ID  tag with zero" ExecutionEnded="06/10/2016 06:48:42 PM" ExecutionStarted="06/10/2016 06:48:39 PM" Status="1">GET_SUBSCRIBER_DETAILS_016: GET SUBSCRIBER DETAILS ICC_ID  tag with zero<AppComponent Description="Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands" ExecutionEnded="06/10/2016 06:48:39 PM" ExecutionStarted="06/10/2016 06:48:39 PM">Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands<Event Status="4">Test Data Objective : Open and Display the Command Prompt Window to execute the commands</Event>
+<Event Status="1">UNIX Server with IP Address '192.168.151.90' has been connected successfully</Event>
+<Event Status="1">Application Component 'Open_Command_Prompt' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type" ExecutionEnded="06/10/2016 06:48:41 PM" ExecutionStarted="06/10/2016 06:48:39 PM">Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type<Event Status="4">Test Data Objective : Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type</Event>
+<Event Status="1">Command Executed for Command_Start: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_016 start  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_39 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'Remote script activity for the testcase started...
+
+' matched with with Expected output 'Remote script activity for the testcase started'</Event>
+<Event Status="1">The xml request : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:head="http://www.plintron.com/header/" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"&gt;&lt;soapenv:Header&gt; &lt;oas:Security&gt;&lt;!--You may enter ANY elements at this point--&gt;&lt;/oas:Security&gt;&lt;head:TRANSACTION_ID&gt;AutomationTran123ss&lt;/head:TRANSACTION_ID&gt;&lt;head:ENTITY&gt;ITGSIM:11:CBOSAUTO&lt;/head:ENTITY&gt;&lt;head:CHANNEL_REFERENCE&gt;CCARE&lt;/head:CHANNEL_REFERENCE&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;DETAILS&gt;
+&lt;ICC_ID&gt;0&lt;/ICC_ID&gt;&lt;/DETAILS&gt;&lt;/GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;' has been sent successfully.</Event>
+<Event Status="1">The xml response : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+&lt;soapenv:Header&gt;
+&lt;ERROR_CODE&gt;955&lt;/ERROR_CODE&gt;
+&lt;ERROR_DESC&gt;XML Parsing Failed: test:2:19 error:  value '0' does not match regular expression facet '\d{19,20}'&lt;/ERROR_DESC&gt;
+&lt;/soapenv:Header&gt;
+&lt;soapenv:Body&gt;
+&lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;' received successfully.</Event>
+<Event Status="1">'soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Envelope' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">The actual node value of  : '//ERROR_CODE' is '955' and matched with the expected value '955'.</Event>
+<Event Status="1">The actual node value of  : '//ERROR_DESC' is 'XML Parsing Failed: test:2:19 error:  value '0' does not match regular expression facet '\d{19,20}'' and matched with the expected value 'XML Parsing Failed: test:1:60 error:  value '0' does not match regular expression facet '\d{19,20}''.</Event>
+<Event Status="1">Application Component 'Start_Script_XMLVal_SinglePair' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Stop_Script: Stop the logging process" ExecutionEnded="06/10/2016 06:48:42 PM" ExecutionStarted="06/10/2016 06:48:41 PM">Stop_Script: Stop the logging process<Event Status="4">Test Data Objective : Stop the logging process</Event>
+<Event Status="1">Command Executed for Command_Stop: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_016 stop  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_41 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'pass
+' matched with with Expected output 'pass'</Event>
+<Event Status="1">Application Component 'Stop_Script' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR" ExecutionEnded="06/10/2016 06:48:42 PM" ExecutionStarted="06/10/2016 06:48:42 PM">Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR<Event Status="4">Test Data Objective : Validation of Possible outputs of CDR/TDR data by executing command CDR</Event>
+<Event Status="1">Command Executed for CDR: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_016 CDR  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_42 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'PASS
+' matched with with Expected output 'PASS'</Event>
+<Event Status="1">Application Component 'Validating_CDR' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Close_Command_Prompt: Closes the Command Prompt Window" ExecutionEnded="06/10/2016 06:48:42 PM" ExecutionStarted="06/10/2016 06:48:42 PM">Close_Command_Prompt: Closes the Command Prompt Window<Event Status="4">Test Data Objective : Closes the Command Prompt Window</Event>
+<Event Status="1">Unix Connection disconnected successfully</Event>
+<Event Status="1">Application Component 'Close_Command_Prompt' execution is  successful</Event>
+<Event Status="4">End of Test Case :  GET_SUBSCRIBER_DETAILS_016</Event>
+</AppComponent>
+</TestCase>
+<TestCase Description="GET_SUBSCRIBER_DETAILS_017: GET SUBSCRIBER DETAILS ICC_ID tag  with empty" ExecutionEnded="06/10/2016 06:48:45 PM" ExecutionStarted="06/10/2016 06:48:42 PM" Status="1">GET_SUBSCRIBER_DETAILS_017: GET SUBSCRIBER DETAILS ICC_ID tag  with empty<AppComponent Description="Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands" ExecutionEnded="06/10/2016 06:48:43 PM" ExecutionStarted="06/10/2016 06:48:42 PM">Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands<Event Status="4">Test Data Objective : Open and Display the Command Prompt Window to execute the commands</Event>
+<Event Status="1">UNIX Server with IP Address '192.168.151.90' has been connected successfully</Event>
+<Event Status="1">Application Component 'Open_Command_Prompt' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type" ExecutionEnded="06/10/2016 06:48:44 PM" ExecutionStarted="06/10/2016 06:48:43 PM">Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type<Event Status="4">Test Data Objective : Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type</Event>
+<Event Status="1">Command Executed for Command_Start: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_017 start  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_43 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'Remote script activity for the testcase started...
+
+' matched with with Expected output 'Remote script activity for the testcase started'</Event>
+<Event Status="1">The xml request : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:head="http://www.plintron.com/header/" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"&gt;&lt;soapenv:Header&gt; &lt;oas:Security&gt;&lt;!--You may enter ANY elements at this point--&gt;&lt;/oas:Security&gt;&lt;head:TRANSACTION_ID&gt;AutomationTran123ss&lt;/head:TRANSACTION_ID&gt;&lt;head:ENTITY&gt;ITGSIM:11:CBOSAUTO&lt;/head:ENTITY&gt;&lt;head:CHANNEL_REFERENCE&gt;CCARE&lt;/head:CHANNEL_REFERENCE&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;DETAILS&gt;
+&lt;ICC_ID/&gt;&lt;/DETAILS&gt;&lt;/GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;' has been sent successfully.</Event>
+<Event Status="1">The xml response : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+&lt;soapenv:Header&gt;
+&lt;ERROR_CODE&gt;955&lt;/ERROR_CODE&gt;
+&lt;ERROR_DESC&gt;XML Parsing Failed: test:2:10 error:  value '' does not match regular expression facet '\d{19,20}'&lt;/ERROR_DESC&gt;
+&lt;/soapenv:Header&gt;
+&lt;soapenv:Body&gt;
+&lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;' received successfully.</Event>
+<Event Status="1">'soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Envelope' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">The actual node value of  : '//ERROR_CODE' is '955' and matched with the expected value '955'.</Event>
+<Event Status="1">The actual node value of  : '//ERROR_DESC' is 'XML Parsing Failed: test:2:10 error:  value '' does not match regular expression facet '\d{19,20}'' and matched with the expected value 'XML Parsing Failed: test:1:59 error:  value '' does not match regular expression facet '\d{19,20}''.</Event>
+<Event Status="1">Application Component 'Start_Script_XMLVal_SinglePair' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Stop_Script: Stop the logging process" ExecutionEnded="06/10/2016 06:48:45 PM" ExecutionStarted="06/10/2016 06:48:44 PM">Stop_Script: Stop the logging process<Event Status="4">Test Data Objective : Stop the logging process</Event>
+<Event Status="1">Command Executed for Command_Stop: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_017 stop  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_44 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'pass
+' matched with with Expected output 'pass'</Event>
+<Event Status="1">Application Component 'Stop_Script' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR" ExecutionEnded="06/10/2016 06:48:45 PM" ExecutionStarted="06/10/2016 06:48:45 PM">Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR<Event Status="4">Test Data Objective : Validation of Possible outputs of CDR/TDR data by executing command CDR</Event>
+<Event Status="1">Command Executed for CDR: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_017 CDR  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_45 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'PASS
+' matched with with Expected output 'PASS'</Event>
+<Event Status="1">Application Component 'Validating_CDR' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Close_Command_Prompt: Closes the Command Prompt Window" ExecutionEnded="06/10/2016 06:48:45 PM" ExecutionStarted="06/10/2016 06:48:45 PM">Close_Command_Prompt: Closes the Command Prompt Window<Event Status="4">Test Data Objective : Closes the Command Prompt Window</Event>
+<Event Status="1">Unix Connection disconnected successfully</Event>
+<Event Status="1">Application Component 'Close_Command_Prompt' execution is  successful</Event>
+<Event Status="4">End of Test Case :  GET_SUBSCRIBER_DETAILS_017</Event>
+</AppComponent>
+</TestCase>
+<TestCase Description="GET_SUBSCRIBER_DETAILS_018: GET SUBSCRIBER DETAILS without ICC_ID tag" ExecutionEnded="06/10/2016 06:48:48 PM" ExecutionStarted="06/10/2016 06:48:45 PM" Status="1">GET_SUBSCRIBER_DETAILS_018: GET SUBSCRIBER DETAILS without ICC_ID tag<AppComponent Description="Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands" ExecutionEnded="06/10/2016 06:48:46 PM" ExecutionStarted="06/10/2016 06:48:45 PM">Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands<Event Status="4">Test Data Objective : Open and Display the Command Prompt Window to execute the commands</Event>
+<Event Status="1">UNIX Server with IP Address '192.168.151.90' has been connected successfully</Event>
+<Event Status="1">Application Component 'Open_Command_Prompt' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type" ExecutionEnded="06/10/2016 06:48:47 PM" ExecutionStarted="06/10/2016 06:48:46 PM">Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type<Event Status="4">Test Data Objective : Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type</Event>
+<Event Status="1">Command Executed for Command_Start: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_018 start  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_46 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'Remote script activity for the testcase started...
+
+' matched with with Expected output 'Remote script activity for the testcase started'</Event>
+<Event Status="1">The xml request : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:head="http://www.plintron.com/header/" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"&gt;&lt;soapenv:Header&gt; &lt;oas:Security&gt;&lt;!--You may enter ANY elements at this point--&gt;&lt;/oas:Security&gt;&lt;head:TRANSACTION_ID&gt;AutomationTran123ss&lt;/head:TRANSACTION_ID&gt;&lt;head:ENTITY&gt;ITGSIM:11:CBOSAUTO&lt;/head:ENTITY&gt;&lt;head:CHANNEL_REFERENCE&gt;CCARE&lt;/head:CHANNEL_REFERENCE&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;DETAILS&gt;
+&lt;ICC_ID&gt;999999500051000&lt;/ICC_ID&gt;&lt;/DETAILS&gt;&lt;/GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;' has been sent successfully.</Event>
+<Event Status="1">The xml response : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+&lt;soapenv:Header&gt;
+&lt;ERROR_CODE&gt;955&lt;/ERROR_CODE&gt;
+&lt;ERROR_DESC&gt;XML Parsing Failed: test:2:33 error:  value '999999500051000' does not match regular expression facet '\d{19,20}'&lt;/ERROR_DESC&gt;
+&lt;/soapenv:Header&gt;
+&lt;soapenv:Body&gt;
+&lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;' received successfully.</Event>
+<Event Status="1">'soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Envelope' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">The actual node value of  : '//ERROR_CODE' is '955' and matched with the expected value '955'.</Event>
+<Event Status="1">The actual node value of  : '//ERROR_DESC' is 'XML Parsing Failed: test:2:33 error:  value '999999500051000' does not match regular expression facet '\d{19,20}'' and matched with the expected value 'XML Parsing Failed: test:1:74 error:  value '999999500051000' does not match regular expression facet '\d{19,20}''.</Event>
+<Event Status="1">Application Component 'Start_Script_XMLVal_SinglePair' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Stop_Script: Stop the logging process" ExecutionEnded="06/10/2016 06:48:48 PM" ExecutionStarted="06/10/2016 06:48:47 PM">Stop_Script: Stop the logging process<Event Status="4">Test Data Objective : Stop the logging process</Event>
+<Event Status="1">Command Executed for Command_Stop: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_018 stop  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_47 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'pass
+' matched with with Expected output 'pass'</Event>
+<Event Status="1">Application Component 'Stop_Script' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR" ExecutionEnded="06/10/2016 06:48:48 PM" ExecutionStarted="06/10/2016 06:48:48 PM">Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR<Event Status="4">Test Data Objective : Validation of Possible outputs of CDR/TDR data by executing command CDR</Event>
+<Event Status="1">Command Executed for CDR: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_018 CDR  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_48 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'PASS
+' matched with with Expected output 'PASS'</Event>
+<Event Status="1">Application Component 'Validating_CDR' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Close_Command_Prompt: Closes the Command Prompt Window" ExecutionEnded="06/10/2016 06:48:48 PM" ExecutionStarted="06/10/2016 06:48:48 PM">Close_Command_Prompt: Closes the Command Prompt Window<Event Status="4">Test Data Objective : Closes the Command Prompt Window</Event>
+<Event Status="1">Unix Connection disconnected successfully</Event>
+<Event Status="1">Application Component 'Close_Command_Prompt' execution is  successful</Event>
+<Event Status="4">End of Test Case :  GET_SUBSCRIBER_DETAILS_018</Event>
+</AppComponent>
+</TestCase>
+<TestCase Description="GET_SUBSCRIBER_DETAILS_019: GET SUBSCRIBER DETAILS IMSI tag  with invalid data" ExecutionEnded="06/10/2016 06:48:52 PM" ExecutionStarted="06/10/2016 06:48:48 PM" Status="1">GET_SUBSCRIBER_DETAILS_019: GET SUBSCRIBER DETAILS IMSI tag  with invalid data<AppComponent Description="Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands" ExecutionEnded="06/10/2016 06:48:49 PM" ExecutionStarted="06/10/2016 06:48:48 PM">Open_Command_Prompt: Open and Display the Command Prompt Window to execute the commands<Event Status="4">Test Data Objective : Open and Display the Command Prompt Window to execute the commands</Event>
+<Event Status="1">UNIX Server with IP Address '192.168.151.90' has been connected successfully</Event>
+<Event Status="1">Application Component 'Open_Command_Prompt' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type" ExecutionEnded="06/10/2016 06:48:51 PM" ExecutionStarted="06/10/2016 06:48:49 PM">Start_Script_XMLVal_SinglePair: Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type<Event Status="4">Test Data Objective : Start the command for shell script logging, Send Request, Verify Input and Output XML data for the given Request Type</Event>
+<Event Status="1">Command Executed for Command_Start: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_019 start  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_49 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'Remote script activity for the testcase started...
+
+' matched with with Expected output 'Remote script activity for the testcase started'</Event>
+<Event Status="1">The xml request : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:head="http://www.plintron.com/header/" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"&gt;&lt;soapenv:Header&gt; &lt;oas:Security&gt;&lt;!--You may enter ANY elements at this point--&gt;&lt;/oas:Security&gt;&lt;head:TRANSACTION_ID&gt;AutomationTran123ss&lt;/head:TRANSACTION_ID&gt;&lt;head:ENTITY&gt;ITGSIM:11:CBOSAUTO&lt;/head:ENTITY&gt;&lt;head:CHANNEL_REFERENCE&gt;CCARE&lt;/head:CHANNEL_REFERENCE&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;DETAILS&gt;&lt;IMSI&gt;151151515151555&lt;/IMSI&gt;&lt;/DETAILS&gt;&lt;/GET_SUBSCRIBER_DETAILS_REQUEST&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;' has been sent successfully.</Event>
+<Event Status="1">The xml response : '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+&lt;soapenv:Header&gt;
+&lt;ERROR_CODE&gt;1&lt;/ERROR_CODE&gt;
+&lt;ERROR_DESC&gt;Invalid Key&lt;/ERROR_DESC&gt;
+&lt;/soapenv:Header&gt;
+&lt;soapenv:Body&gt;
+&lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;' received successfully.</Event>
+<Event Status="1">'soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Envelope' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">'/soapenv:Header' is  Present in the Response XML</Event>
+<Event Status="1">'soapenv:Body' is  Present in the Response XML</Event>
+<Event Status="1">The actual node value of  : '//ERROR_CODE' is '1' and matched with the expected value '1'.</Event>
+<Event Status="1">The actual node value of  : '//ERROR_DESC' is 'Invalid Key' and matched with the expected value 'Invalid Key'.</Event>
+<Event Status="1">Application Component 'Start_Script_XMLVal_SinglePair' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Stop_Script: Stop the logging process" ExecutionEnded="06/10/2016 06:48:52 PM" ExecutionStarted="06/10/2016 06:48:51 PM">Stop_Script: Stop the logging process<Event Status="4">Test Data Objective : Stop the logging process</Event>
+<Event Status="1">Command Executed for Command_Stop: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_019 stop  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_51 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'pass
+' matched with with Expected output 'pass'</Event>
+<Event Status="1">Application Component 'Stop_Script' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR" ExecutionEnded="06/10/2016 06:48:52 PM" ExecutionStarted="06/10/2016 06:48:52 PM">Validating_CDR: Validation of Possible outputs of CDR/TDR data by executing command CDR<Event Status="4">Test Data Objective : Validation of Possible outputs of CDR/TDR data by executing command CDR</Event>
+<Event Status="1">Command Executed for CDR: './start_stop_Autologs.sh GET_SUBSCRIBER_DETAILS_019 CDR  1.0.0.0 ITG Rev0 /home/testteam/Products/ITG-CBOS-API-AUTO/CBOS_ITG_API_NSS_Framework_USA 2016_Jun_10_18_48_52 &amp;' Executed successfully</Event>
+<Event Status="1">Output from Unix server 'PASS
+' matched with with Expected output 'PASS'</Event>
+<Event Status="1">Application Component 'Validating_CDR' execution is  successful</Event>
+</AppComponent>
+<AppComponent Description="Close_Command_Prompt: Closes the Command Prompt Window" ExecutionEnded="06/10/2016 06:48:52 PM" ExecutionStarted="06/10/2016 06:48:52 PM">Close_Command_Prompt: Closes the Command Prompt Window<Event Status="4">Test Data Objective : Closes the Command Prompt Window</Event>
+<Event Status="1">Unix Connection disconnected successfully</Event>
+<Event Status="1">Application Component 'Close_Command_Prompt' execution is  successful</Event>
+<Event Status="4">End of Test Case :  GET_SUBSCRIBER_DETAILS_019</Event>
+</AppComponent>
+</TestCase>
+</TestSuite>
+</TestReport>

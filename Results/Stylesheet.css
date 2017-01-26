@@ -1,0 +1,194 @@
+/* 
+Author	: Hari Prakash
+Date	: 06-Apr-12
+
+INFORMATION:
+Styles define how to display HTML elements.
+
+WARNING:
+Editing this file is strictly not advisable.
+*/
+
+BODY {
+	font-family:Verdana, Arial, Helvetica, sans-serif!important;
+	font-size:small;
+	margin:0px;
+	padding:0px;
+	background:url(_icons/bg.jpg) repeat-x 0 0;
+	font-size:10px;
+}
+SPAN {
+	FONT-WEIGHT: bold;
+	COLOR: #6666cc;
+	BORDER-BOTTOM: #3366cc 1px solid;
+	POSITION: static;
+	BACKGROUND-COLOR: gainsboro;
+}
+.TABLEHEAD table{
+	border: 0;
+	BORDER: #3366cc 1px solid;
+	cursor:pointer;
+	width:920px; line-height:30px; color:#000000;
+}
+.Batch{
+	border: 0;	
+	BORDER: #696969 1px solid;
+	FONT-SIZE: 12px;
+	margin-left:4%;width:950px;
+}
+.TestCase {
+	FONT-SIZE: 11px;
+	background-color:#b9d5f7;
+	clear:both;
+	margin-left:0%;width:910px; border:solid 0px red;line-height:25px;
+}
+.AppComponent {
+	border: 0;
+	BORDER: #696969 0px solid;
+	FONT-SIZE: 11px;
+	margin-left:0%;width:910px; border:solid 0px red;line-height:20px;
+}
+.MESSAGES {
+	border: 0;
+	BORDER: #696969 0px solid;
+	margin-left:0%;width:890px; border:solid 0px red;line-height:20px;	font-size:11px;
+}
+.M1
+{
+	background-color: #F5F5F5;
+}
+.M2
+{
+	background-color: #FFFFFF;
+}
+
+
+.head-passed
+{
+	FONT-WEIGHT: bold;
+	COLOR: #009933;
+	width: 10%; padding-left:5px;
+}
+
+.head-failed
+{
+	FONT-WEIGHT: bold;
+	COLOR: #ff3333;
+	width: 10%; padding-left:5px;
+}
+
+
+.PASSED {
+	FONT-WEIGHT: bold;
+	COLOR: #009933;
+	width: 10%; padding-left:5px;
+}
+
+
+.FAILED {
+	FONT-WEIGHT: bold;
+	COLOR: #ff3333;
+	width: 10%;padding-left:5px;
+}
+.WARNINGS {
+	FONT-WEIGHT: bold;
+	COLOR: #FF8C00;
+	width: 10%; padding-left:0px;
+}
+.INFORMATION {
+	FONT-WEIGHT: bold;
+	COLOR: #800080;
+	width: 10% padding-left:0px;
+}
+.MESSAGE {
+	FONT-WEIGHT: bold;
+	width: 40%;
+}
+.ADDITIONAL_INFORMATION {
+	FONT-WEIGHT: bold;
+	COLOR: #800080;
+	width: 10%;
+}
+
+.header {
+	height:100px;
+	width:750px;
+	margin-left:4%;
+}
+.header td {
+	text-align:left;
+	vertical-align:middle;		
+}
+.header td h2 {
+	/* color:#00deff; */
+	color:#fff;
+	padding:0px;
+	margin:0px;
+	text-align:center;
+}
+.header td p {
+	/* color:#00deff; */
+	color:#fff;
+	padding:0px;
+	margin:0px;
+	text-align:center;
+}
+.bluecol {
+	background-color:#1c326f;
+	color:#fff;
+	padding:0;
+	text-indent:5px;
+	line-height:25px;
+	font-size:11px; padding:0 5px;
+}
+.whitecol {
+	background-color:#f9f9f9;
+	color:#2a4286;
+	text-indent:5px;
+	font-size:11px;
+	padding:0 5px;
+}
+.details {
+	margin:10px 4%;
+	width:950px; 
+}
+.details-lft {
+	float:left;
+	background:url(_icons/det.png) no-repeat;
+	height:121px;
+	width:20px;
+}
+.details-rht {
+	float:left;
+	background:url(_icons/det-cl.png) no-repeat;
+	background-position:right;
+	width:95%;
+	text-align:left;
+	height:111px;
+	margin:0px 0 0 0;
+}
+.details-rht p{
+	margin:0px;
+	padding:0px;
+	text-align:left;
+	height:30px;
+	padding-top:10px;
+	font-size:15px;
+	font-weight:bold;
+	line-height:30px
+}
+ul.icn-box{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	margin-left:0%
+}
+ul.icn-box li{
+	float:left;
+	margin-right:20px;
+}
+
+a
+{color:#1c326f}
+img
+{border:0px;}
